@@ -1,0 +1,26 @@
+arr=[1,1,2,3,4,6,2,2,1];
+arr.sort();
+arr.reverse();
+print(arr);
+print(sum(arr)/2);
+if((sum(arr)%2)!=0):
+    print("-1");
+else:
+    val=sum(arr)/2;
+    arr1=[];
+    n=0;
+    temp=0;
+    for i in arr:
+        temp+=i
+        if(i>val):
+            print("-1 VAL");
+            break;
+        elif(temp<=val):
+            arr1.append(i);
+        else:
+            temp-=i;
+    if(len(arr1) >= 0):
+        print(arr1);
+        for i in arr1:
+            arr.remove(i);
+        print(arr);
