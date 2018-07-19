@@ -24,3 +24,4 @@ else:
         for i in arr1:
             arr.remove(i);
         print(arr);
+        
