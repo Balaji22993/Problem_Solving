@@ -1,0 +1,17 @@
+a="amazon"
+b="amazon"
+i=0;
+j=0;
+d=""
+while(len(a)>i):
+    if(b[0]==a[i]):
+        while(j<len(b)):
+            d+=str(a[i])
+            i=i+1
+            j=j+1
+        if(d==b):
+            print("Yes")
+        else:
+            print("No")
+        break
+    i=i+1;
