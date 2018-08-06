@@ -1,17 +1,18 @@
-a="amazon"
-b="amazon"
+a="balaji";
+b="balaji";
 i=0;
 j=0;
-d=""
+m=0;
 while(len(a)>i):
-    if(b[0]==a[i]):
-        while(j<len(b)):
-            d+=str(a[i])
-            i=i+1
-            j=j+1
-        if(d==b):
-            print("Yes")
-        else:
-            print("No")
-        break
+    if(len(b)>j):
+        if(a[i]==b[j]):
+            m=1;
+            j=j+1;
+        elif(m==1):
+            m=2;
+            break;
     i=i+1;
+if(m==1):
+    print("subset")
+else:
+    print("not")
